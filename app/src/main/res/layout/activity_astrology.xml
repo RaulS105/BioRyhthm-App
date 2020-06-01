@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAstrology">
+
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="418dp"
+        android:layout_height="779dp"
+        android:background="#0B0E19"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/zodiac" />
+
+    <ImageView
+        android:id="@+id/ivSideBar"
+        android:layout_width="342dp"
+        android:layout_height="313dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/ivBars"
+        app:layout_constraintTop_toBottomOf="@+id/tvAstrologySigns"
+        app:srcCompat="?android:attr/fastScrollThumbDrawable" />
+
+    <TextView
+        android:id="@+id/tvAstrologySigns"
+        android:layout_width="323dp"
+        android:layout_height="221dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textColor="#F6F5F5"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBars"
+        android:layout_width="301dp"
+        android:layout_height="315dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAstrologySigns"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="?android:attr/fastScrollThumbDrawable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
